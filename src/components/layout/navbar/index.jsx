@@ -14,9 +14,9 @@ const Navbar = () => {
 
     const navigate = useNavigate()
     return (
-      <div className="Container flex flex-wrap xl:flex-nowrap items-center justify-between xl:space-x-2 2xl:space-x-5 3xl:space-x-10 py-5 mb-5">
+      <div className="Container flex flex-wrap xl:flex-nowrap items-center justify-between xl:space-x-5 2xl:space-x-14 3xl:space-x-16 py-5 mb-5">
         {sideBar ? <SideBar {...{setSideBar}}/> : null}
-        <div className="border flex items-center justify-between xl:w-[100%] space-x-10 2xl:space-x-15 3xl:space-x-20">
+        <div className="flex items-center justify-between xl:w-[100%] space-x-10 2xl:space-x-15 3xl:space-x-20">
           <div className="w-[100%] xl:w-auto flex items-center xl:space-x-0 space-x-2 md:space-x-5 ">
             <div 
             onClick={()=>setSideBar((prev)=>!prev)}
@@ -24,7 +24,7 @@ const Navbar = () => {
               <Hamburger className="fill-black" />
             </div>
             <h1
-              className="xl:text-xl 2xl:text-2xl font-bold text-secondary cursor-pointer hover:drop-shadow-md duration-300"
+              className="text-lg xl:text-xl 2xl:text-2xl font-bold text-secondary cursor-pointer hover:drop-shadow-md duration-300"
               onClick={() => navigate("/")}
             >
               MEGA.news
@@ -55,7 +55,7 @@ const Navbar = () => {
             </p>
           </div>
         </div>
-        <div className="border flex items-center justify-end xl:justify-start xl:w-[25%] h-full">
+        <div className="flex items-center justify-end xl:justify-start xl:w-[25%] h-full">
           <div className="flex items-center space-x-2 relative group cursor-pointer">
             <div className="overflow-hidden rounded-[12px]">
               <img src={userPhoto} alt="" />
@@ -78,7 +78,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="border xl:w-[50%] rounded-md bg-gray flex items-center p-2 space-x-2 justify-between flex-[1,_0,_100%] mt-5 xl:mt-0 w-full">
+        <div className="xl:w-[50%] rounded-md bg-gray flex items-center p-2 space-x-2 justify-between flex-[1,_0,_100%] mt-5 xl:mt-0 w-full">
           <div className="flex items-center space-x-3">
             <ThreeDots className="fill-black/75 cursor-pointer" />
             <input
