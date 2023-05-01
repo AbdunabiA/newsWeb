@@ -1,11 +1,11 @@
 
 
-export const ChosenIcon = ({styles}) => {
+export const ChosenIcon = ({ className, width = 16, height = 21 }) => {
   return (
     <svg
-      className={styles}
-      width="16"
-      height="21"
+      className={className}
+      width={width}
+      height={height}
       viewBox="0 0 16 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -17,5 +17,5 @@ export const ChosenIcon = ({styles}) => {
       />
     </svg>
   );
-}
+};
 

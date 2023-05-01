@@ -9,7 +9,7 @@ const index = ({
     <div
       className={`bg-white flex ${flexDirection} gap-[10px] p-[10px] rounded-[12px] shadow-[0px_0px_32px_rgba(0,0,0,0.07)] text-black hover:shadow-lg duration-300 cursor-pointer`}
     >
-      <div className="w-[100%] rounded-md overflow-hidden bg-slate-500">
+      <div className="w-[100%] rounded-md overflow-hidden">
         <img src={img} alt="post Image" className="w-full h-full" />
       </div>
       <div className="w-[100%] flex flex-col justify-between gap-3">
@@ -27,7 +27,7 @@ const index = ({
             <h3 className="text-sm leading-[150%]">{authorName}</h3>
             <p className="text-xs leading-[150%] text-black/75">{postedAt}</p>
           </div>
-          <div className=""><ChosenIcon styles='fill-black/50 hover:fill-primary cursor-pointer duration-300'/></div>
+          <div className=""><ChosenIcon className='fill-black/50 hover:fill-primary cursor-pointer duration-300'/></div>
         </div>
       </div>
     </div>
